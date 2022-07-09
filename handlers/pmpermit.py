@@ -18,7 +18,7 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-                f"ʜᴇʏ {message.from_user.mention()},\nᴛʜɪs ɪs [{bn}](t.me/{lel}) ʙᴏᴛ ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ.\n\nᴅᴏɴ'ᴛ ᴛʀʏ ᴛᴏ sᴘᴀᴍ ʜᴇʀᴇ ᴇʟsᴇ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ꜰᴜ*ᴋᴇᴅ ʙʏ [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](t.me/{OWNER_USERNAME}).\n",
+                f"𝗛𝗘'𝗟𝗟 {message.from_user.mention()},\nᴛʜɪs ɪs [{bn}](t.me/{lel}) 𝐓𝐡𝐢𝐬 𝐢𝐬 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐀𝐜𝐜𝐨𝐮𝐧𝐭 𝐝𝐨𝐧'𝐭🚫 𝐭𝐫𝐲 𝐭𝐨 <𝐒𝐏𝐀𝐌> 𝐡𝐞𝐫𝐞 𝐨𝐭𝐡𝐞𝐫𝐰𝐢𝐬𝐞 𝐲𝐨𝐮𝐫 𝐈'𝐝 𝐰𝐢𝐥𝐥 𝐛𝐞 𝐛𝐚𝐧 𝐟𝐫𝐨𝐦 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐦. ʙʏ [🕊️⃝‌🦋𝐒 𝐑𝐚𝐣𝐩𝐮𝐭](t.me/{OWNER_USERNAME}).\n",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
