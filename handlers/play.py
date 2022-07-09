@@ -55,7 +55,7 @@ async def play(_, message: Message):
 
     await message.delete()
 
-    fallen = await message.reply("» ᴘʀᴏᴄᴇssɪɴɢ​... ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʙᴀʙʏ🔎")
+    fallen = await message.reply("» 𝐏𝐑𝐎𝐂𝐄𝐒𝐒𝐈𝐍𝐆⏩⏩..𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐒 𝐑𝐚𝐣𝐩𝐮𝐭")
 
     chumtiya = message.from_user.mention
 
@@ -77,7 +77,7 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await fallen.edit(
-                        "<b>» ꜰɪʀsᴛʟʏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ʙᴀʙʏ</b>")
+                        "<b>» 𝐅𝐈𝐑𝐒𝐓𝐈𝐋𝐘 𝐌𝐀𝐊𝐄 𝐌𝐄 admin 𝐒 𝐑𝐚𝐣𝐩𝐮𝐭</b>")
                     return
 
                 try:
@@ -89,7 +89,7 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await fallen.edit(
-                        f"<b>» ᴀssɪsᴛᴀɴᴛ ɪs ɴᴏᴛ ɪɴ ᴛʜɪs ᴄʜᴀᴛ ʙᴀʙʏ, sᴇɴᴅ /join ғɪʀsᴛ ᴛɪᴍᴇ ᴛᴏ ᴏʀᴅᴇʀ ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ᴊ​ᴏɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.")
+                        f"<b>» 𝐀𝐒𝐒𝐈𝐒𝐓𝐀𝐍𝐓 𝐈𝐒 𝐍𝐎𝐓 𝐈𝐍 𝐂𝐇𝐀𝐓 𝐒 𝐑𝐚𝐣𝐩𝐮𝐭, 𝐉𝐎𝐈𝐍 𝐅𝐈𝐑𝐒𝐓 𝐓𝐈𝐌𝐄 𝐓𝐎 𝐎𝐑𝐃𝐄𝐑 𝐓𝐇𝐄 𝐀𝐒𝐒𝐈𝐒𝐓𝐀𝐍𝐓 𝐓𝐎 𝐉𝐎𝐈𝐍 𝐘𝐎𝐔𝐑 𝐂𝐇𝐀𝐓     .")
     try:
         await USER.get_chat(chid)
     except Exception as e:
@@ -107,7 +107,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ"
+                f"» 𝐒𝐎𝐑𝐑𝐘 𝐒 𝐑𝐀𝐉𝐏𝐔𝐓, 𝐓𝐑𝐀𝐂𝐊 𝐋𝐎𝐍𝐆𝐄𝐑 𝐓𝐇𝐄𝐍  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ"
             )
 
         file_name = get_file_name(audio)
@@ -148,14 +148,14 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await fallen.edit(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ"
+                f"» 𝐒𝐎𝐑𝐑𝐘 𝐒 𝐑𝐀𝐉𝐏𝐔𝐓, 𝐓𝐑𝐀𝐂𝐊 𝐋𝐎𝐍𝐆𝐄𝐑 𝐓𝐇𝐄𝐍  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ"
             )
             return
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
             return await fallen.edit(
-                "» ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ sᴇᴀʀᴄʜ ʙᴀʙʏ🤦🏻‍♂️"
+                "» 𝐒𝐎𝐌𝐄 𝐓𝐄𝐗𝐓 𝐓𝐎 𝐒𝐄𝐀𝐑𝐂𝐇 🕊️⃝‌🦋𝐒 𝐑𝐚𝐣𝐩𝐮𝐭🤦🏻‍♂"
             )
         await fallen.edit("🔎")
         query = message.text.split(None, 1)[1]
@@ -223,7 +223,7 @@ async def play(_, message: Message):
             )
 
         await message.reply_text(
-            text=f"**ㅤㅤㅤ» ɴᴏᴡ ᴘʟᴀʏɪɴɢ «**\n📌 **ᴛɪᴛʟᴇ​:** [{title[:65]}]({url})\n🕕 **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}` ᴍɪɴᴜᴛᴇs\n💕 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ​:** {chumtiya}\n💔 **ᴘʟᴀʏɪɴɢ ɪɴ​:** `{message.chat.title}`\n🎥 **sᴛʀᴇᴀᴍ ᴛʏᴘᴇ:** ʏᴏᴜᴛᴜʙᴇ ᴍᴜsɪᴄ\n",
+            text=f"**ㅤㅤㅤ» 𝐍𝐎𝐖 𝐏𝐋𝐀𝐘𝐈𝐍𝐆 𝐒 𝐑𝐚𝐣𝐩𝐮𝐭🕊️⃝‌🦋 𝐌𝐮𝐬𝐢𝐜 «**\n📌 **ᴛɪᴛʟᴇ​:** [{title[:65]}]({url})\n🕕 **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}` ᴍɪɴᴜᴛᴇs\n💕 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ​:** {chumtiya}\n💔 **ᴘʟᴀʏɪɴɢ ɪɴ​:** `{message.chat.title}`\n🎥 **sᴛʀᴇᴀᴍ ᴛʏᴘᴇ:** ʏᴏᴜᴛᴜʙᴇ ᴍᴜsɪᴄ\n",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
