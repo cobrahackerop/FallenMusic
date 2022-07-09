@@ -33,7 +33,7 @@ async def start_(client: Client, message: Message):
                        ),
                   ],[
                     InlineKeyboardButton(
-                        "💔 𝐎𝐖𝐍𝐄𝐑  💔", url=f"https://t.me/{me}"
+                        "💔 𝐎𝐖𝐍𝐄𝐑  💔", url=f"https://t.me/s_rajputt"
                     ),
                     InlineKeyboardButton(
                         "🍒 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🍒", url=f"https://t.me/{SUPPORT_GROUP}"
