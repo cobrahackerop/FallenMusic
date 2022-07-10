@@ -18,7 +18,7 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-                f"𝗛𝗘'𝗟𝗟 {message.from_user.mention()},\nᴛʜɪs ɪs [{bn}](t.me/{lel}) 𝐓𝐡𝐢𝐬 𝐈𝐬 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐀𝐜𝐜𝐨𝐮𝐧𝐭 𝐃𝐨𝐧'𝐭📵 𝐓𝐫𝐲 𝐓𝐨 [𝐒𝐩𝐚𝐦] 𝐌𝐲 𝐌𝐚𝐬𝐭𝐞𝐫 🕊️⃝‌🦋𝐒 𝐑𝐚𝐣𝐩𝐮𝐭 𝐎𝐭𝐡𝐞𝐫𝐰𝐢𝐬𝐞 𝐘𝐨𝐮𝐫 𝐀𝐜𝐜𝐨𝐮𝐧𝐭 𝐁𝐚𝐧 𝐅𝐫𝐨𝐦 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦.  [🕊️⃝‌🦋𝐒 𝐑𝐚𝐣𝐩𝐮𝐭](t.me/{OWNER_USERNAME}).\n",
+                f"𝗛𝗘'𝗟𝗟 {message.from_user.mention()},\n𝓑𝓞𝓣 [{bn}](t.me/{lel}) 𝐓𝐡𝐢𝐬 𝐈𝐬 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐀𝐜𝐜𝐨𝐮𝐧𝐭 𝐃𝐨𝐧'𝐭📵 𝐓𝐫𝐲 𝐓𝐨 [𝐒𝐩𝐚𝐦] 𝐌𝐲 𝐌𝐚𝐬𝐭𝐞𝐫 𝐎𝐭𝐡𝐞𝐫𝐰𝐢𝐬𝐞 𝐘𝐨𝐮𝐫 𝐀𝐜𝐜𝐨𝐮𝐧𝐭 𝐁𝐚𝐧 𝐅𝐫𝐨𝐦 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦. 𝓑𝔂 [🕊️⃝‌🦋𝐒 𝐑𝐚𝐣𝐩𝐮𝐭](t.me/{OWNER_USERNAME}).\n",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -59,7 +59,7 @@ async def autopmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("» ᴀᴜᴛᴏ ᴀᴘᴘʀᴏᴠᴇᴅ ᴛᴏ ᴘᴍ​ ʙᴀʙʏ.")
+        await message.reply_text("» 𝓝𝓸𝔀 𝔂𝓸𝓾 𝓬𝓪𝓷 𝓶𝓼𝓰 𝓽𝓸  🕊️⃝‌🦋𝐒 𝐑𝐚𝐣𝐩𝐮𝐭 ..")
         return
     message.continue_propagation()    
     
